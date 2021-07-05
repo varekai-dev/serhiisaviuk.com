@@ -51,6 +51,9 @@
   .download button {
     background: $blue;
   }
+  .apiko-logo img {
+    filter: invert(0.8);
+  }
   .header {
     .avatar-wrapper::before {
       background: $blue;
@@ -135,6 +138,7 @@
     bottom: 0;
     left: 15px;
   }
+
   &__avatar {
     min-width: 200px;
   }
@@ -221,7 +225,6 @@
 }
 .experience {
   width: 68%;
-  margin-right: 20px;
 }
 .work {
   position: relative;
@@ -233,6 +236,7 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
+    cursor: pointer;
   }
   li:before {
     content: "●";
@@ -252,8 +256,11 @@
     font-size: 16px;
   }
   &__description {
-    padding-left: 20px;
+    padding-left: 15px;
     font-size: 15px;
+  }
+  &__content {
+    padding-bottom: 5px;
   }
   &__technologies {
     margin: 10px 0;
@@ -270,11 +277,6 @@
     line-height: 1;
     margin-right: 8px;
     margin-bottom: 8px;
-    &:hover {
-      color: $black;
-      background-color: #dfdfdf;
-      @include noselect;
-    }
   }
   &__list {
     padding-left: 20px;
@@ -373,7 +375,7 @@
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1070px) {
   .page {
     padding: 20px;
     &::before {
@@ -382,6 +384,7 @@
   }
   .article {
     padding: 0;
+    padding-bottom: 40px;
   }
   .header {
     flex-direction: column;
@@ -417,7 +420,7 @@
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 930px) {
   .page {
     padding: 20px 10px;
   }

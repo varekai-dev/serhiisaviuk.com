@@ -4,8 +4,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { AppContext } from "../context/AppContext";
 import { useReactToPrint } from "react-to-print";
+import { useRouter } from "next/router";
 
 function Layout({ children }) {
+  const router = useRouter();
   const { theme } = useContext(AppContext);
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
@@ -32,7 +34,10 @@ function Layout({ children }) {
           </div>
           <Footer />
           <div className="download">
-            <button onClick={handlePrint}>Download PDF</button>
+            <button onClick={handlePrint}>
+              {" "}
+              {router.route === "/ua" ? "Загрузити" : "Download"} PDF
+            </button>
           </div>
         </article>
       </main>
