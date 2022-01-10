@@ -2,6 +2,15 @@ import { v4 as uuid } from "uuid";
 
 export const portfolio = [
   {
+    name: "Amazon clone",
+    website: "https://next-amazona-sepia.vercel.app/",
+    apiko: false,
+    description:
+      "Shop website with basket, admin panel, profile, orders. Connected to Paypal payment system. Backend is done on Next.js API",
+    technologies: ["next", "mongodb", "paypal", "next connect", "material ui"],
+    id: uuid(),
+  },
+  {
     name: "Coctail shop",
     website: "https://coctail-shop.vercel.app/",
     apiko: true,
@@ -82,8 +91,39 @@ export const portfolio = [
 
 export const realProjects = [
   {
+    website: "jobheron.com",
+    time: "September 2021 - January 2022",
+    name: "Jobheron - UK's Leading Online Recruitment Provider",
+    description:
+      "An application that gives all tools of a recruiter. With a website, you can find candidates for your job simpler, faster, and better",
+    technologies: [
+      "react",
+      "redux",
+      "redux-saga",
+      "typescript",
+      "styled-components",
+      "React Testing Library",
+      "react-hook-form",
+      "yup",
+      "algoliasearch",
+      "@reduxjs/toolkit",
+      "antd",
+      "auth0",
+      "stripe",
+    ],
+    scope: [
+      "Making layouts",
+      "Writing unit tests",
+      "Writing logic",
+      "Connect Strapi payment system",
+      "refactoring",
+      "Fixing bugs",
+    ],
+    id: uuid(),
+  },
+  {
     website: "NDA",
-    time: "April 2021 - present",
+    time: "April 2021 - September 2021",
     name: "Loyalty program",
     description:
       "The separate website that is connected to main where user can register, login. Account collect whole data order history, notification center, shop with different items that user can get for his loyalty",
@@ -192,11 +232,18 @@ export const realProjects = [
 
 export const courses = [
   {
-    name: "Apiko Academy (present)",
+    name: "Next Amazona (2021)",
+    website: "https://www.udemy.com/course/nextjs-ecommerce/",
+    labels: ["next", "material ui", "paypal", "mongodb"],
+    id: uuid(),
+  },
+  {
+    name: "Apiko Academy (2021)",
     website: "https://apiko.academy/course/front-end_2021",
     labels: ["js", "react", "redux"],
     id: uuid(),
   },
+
   {
     name: "The Complete Strapi Course (2021)",
     website: "https://www.udemy.com/course/the-complete-strapi-course/",
@@ -237,22 +284,22 @@ export const courses = [
 ];
 
 export const now = {
-  time: "1st January 2020 – present",
-  place: "??? at G-Light Technology",
-  work: "Had no position in the company. Mostly helped with work in different departments. This is where my journey to the world of IT started. Saw that our HTML coder wasn't enough to make all job.  Started to learn HTML, CSS, JS, React to help with work. At that time I understood that frontend is mine. Start with simple HTML coding and one day realized that is hard to keep all pages updated without some framework. At the end of 2020 transferred all pages to Next.js. From 2021 started to do more dynamic pages. ",
-  scope: [
-    "Email marketing",
-    "marketing",
-    "developing frontend pages",
-    "design",
-    "analytics",
-    "smm",
-    "supporting",
-  ],
+  time: "21st september 2021 – present",
+  place: "Apiko",
+  work: "Frontend Developer",
+  scope: ["redux", "react", "unit testing", "typescript"],
   id: uuid(),
 };
 
 export const backThen = [
+  {
+    time: "1st January 2020 – 14th september",
+    place: "??? at G-Light Technology",
+    scope:
+      "Had no position in the company. Mostly helped with work in different departments. This is where my journey to the world of IT started. Saw that our HTML coder wasn't enough to make all job.  Started to learn HTML, CSS, JS, React to help with work. At that time I understood that frontend is mine. Start with simple HTML coding and one day realized that is hard to keep all pages updated without some framework. At the end of 2020 transferred all pages to Next.js. From 2021 started to do more dynamic pages. ",
+
+    id: uuid(),
+  },
   {
     time: "01th July 2019 – 31st December 2019",
     place: "Marketing manager at XB-Solutions",
@@ -289,11 +336,13 @@ export const skills = [
   "SCSS",
   "FLEXBOX",
   "GULP",
+  "TYPESCRIPT",
+  "ANTD",
+  "REDUX",
   "JAVASCRIPT",
   "WORDPRESS",
   "ELEMENTOR",
   "REACT",
-  "JQUERY",
   "FIGMA",
   "PHOTOSHOP",
   "PAGESPEED OPTIMIZATION",

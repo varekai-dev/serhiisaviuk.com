@@ -2,6 +2,15 @@ import { v4 as uuid } from "uuid";
 
 export const portfolio = [
   {
+    name: "Amazon clone",
+    website: "https://next-amazona-sepia.vercel.app/",
+    apiko: false,
+    description:
+      "Веб-сайт магазину, з адмінкою, реєстрацією, корзиною, профілем. Під'єднаний до платіжної системи Paypal. Бекенд зроблений через Next.js API",
+    technologies: ["next", "mongodb", "paypal", "next connect", "material ui"],
+    id: uuid(),
+  },
+  {
     name: "Coctail shop",
     website: "https://coctail-shop.vercel.app/",
     apiko: true,
@@ -81,6 +90,37 @@ export const portfolio = [
 ];
 
 export const realProjects = [
+  {
+    website: "jobheron.com",
+    time: "Вересень 2021 - Січень 2022",
+    name: "Jobheron - Лідируючий онлайн-провайдер у Великобританії з підбору персоналу",
+    description:
+      "Додаток, який надає всі інструменти рекрутера. За допомогою веб-сайту ви можете знайти кандидатів на вашу роботу простіше, швидше та краще",
+    technologies: [
+      "react",
+      "redux",
+      "redux-saga",
+      "typescript",
+      "styled-components",
+      "React Testing Library",
+      "react-hook-form",
+      "yup",
+      "algoliasearch",
+      "@reduxjs/toolkit",
+      "antd",
+      "auth0",
+      "stripe",
+    ],
+    scope: [
+      "Верстка",
+      "Написання тестів",
+      "написання логіки",
+      "Підключення платіжної системи Strapi",
+      "рефакторінг",
+      "виправлення багів",
+    ],
+    id: uuid(),
+  },
   {
     website: "NDA",
     time: "Квітень 2021 - до сьогодні",
@@ -193,7 +233,13 @@ export const realProjects = [
 
 export const courses = [
   {
-    name: "Apiko Academy (до сьогодні)",
+    name: "Next Amazona (2021)",
+    website: "https://www.udemy.com/course/nextjs-ecommerce/",
+    labels: ["next", "material ui", "paypal", "mongodb"],
+    id: uuid(),
+  },
+  {
+    name: "Apiko Academy (2021)",
     website: "https://apiko.academy/course/front-end_2021",
     labels: ["js", "react", "redux"],
     id: uuid(),
@@ -238,23 +284,30 @@ export const courses = [
 ];
 
 export const now = {
-  time: "1 січня 2020 – дотепер",
-  place: "??? в G-Light Technology",
-  work: "Не мав посади в компанії. Переважно допомагав у роботі в різних відділах. З цього почалася моя подорож у світ ІТ. Побачивши, що нашого HTML-кодера недостатньо, щоб зробити всю роботу. Почав вивчати HTML, CSS, JS, React, щоб допомогти в роботі. Тоді я зрозумів, що це моє. Почав із простого кодування HTML, і одного разу зрозумів, що важко тримати всі сторінки оновленими без певної структури. Наприкінці 2020 року переніс всі сторінки на Next.js. З 2021 року почав робити динаміку.",
-  scope: [
-    "емейл маркетинг",
-    "маркетинг",
-    "верстка лендінгів",
-    "розробка сайтів на next.js",
-    "дизайн",
-    "аналітика",
-    "cмм",
-    "підтримка",
-  ],
+  time: "21 вересня 2021 – дотепер",
+  place: "Apiko",
+  work: "Frontend Developer",
+  scope: ["redux", "react", "unit testing", "typescript"],
   id: uuid(),
 };
 
 export const backThen = [
+  {
+    time: "1 січня 2020 – 14 веренся 2021",
+    place: "??? в G-Light Technology",
+    work: "Не мав посади в компанії. Переважно допомагав у роботі в різних відділах. З цього почалася моя подорож у світ ІТ. Побачивши, що нашого HTML-кодера недостатньо, щоб зробити всю роботу. Почав вивчати HTML, CSS, JS, React, щоб допомогти в роботі. Тоді я зрозумів, що це моє. Почав із простого кодування HTML, і одного разу зрозумів, що важко тримати всі сторінки оновленими без певної структури. Наприкінці 2020 року переніс всі сторінки на Next.js. З 2021 року почав робити динаміку.",
+    scope: [
+      "емейл маркетинг",
+      "маркетинг",
+      "верстка лендінгів",
+      "розробка сайтів на next.js",
+      "дизайн",
+      "аналітика",
+      "cмм",
+      "підтримка",
+    ],
+    id: uuid(),
+  },
   {
     time: "1 липня 2019 – 31 грудня 2019",
     place: "Mаркетинг менеджер в XB-Solutions",
@@ -295,7 +348,9 @@ export const skills = [
   "WORDPRESS",
   "ELEMENTOR",
   "REACT",
-  "JQUERY",
+  "TYPESCRIPT",
+  "ANTD",
+  "REDUX",
   "FIGMA",
   "PHOTOSHOP",
   "PAGESPEED OPTIMIZATION",

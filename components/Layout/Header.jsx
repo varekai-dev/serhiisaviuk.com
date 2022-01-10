@@ -79,8 +79,8 @@ function Header() {
           <h2>{router.route === "/ua" ? "Резюме" : "Resume"} </h2>
           <p>
             {router.route === "/ua"
-              ? "Привіт. Я новачок у фронтенді, однак, я маю пристрасть працювати з HTML, CSS та JS. Я люблю створювати щось нове, що буде працювати потім"
-              : "— Hello! I am a newbie in the frontend, however, I have a passion to work with HTML, CSS, and JS. I love to create something new that will work after"}{" "}
+              ? "Привіт! Я фронтенд-розробник, мені подобається працювати з React, я люблю створювати щось нове, що працюватиме потім"
+              : "— Hello! I am Frontend Developer that has a passion to work with React, love to create something new that will work after"}{" "}
           </p>
         </div>
       </div>
