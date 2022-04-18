@@ -91,6 +91,28 @@ export const portfolio = [
 
 export const realProjects = [
   {
+    website: "conexwest.com",
+    time: "February 2022 - Present",
+    name: "Conexwest - Shipping containers. Storage solutions.",
+    description:
+      "Conexwest is the leading supplier of standard and modified storage containers in Northern California. Admin panel is created to manage work of resources, control tasks, and to create reports.",
+    technologies: [
+      "react",
+      "redux",
+      "redux-saga",
+      "typescript",
+      "styled-components",
+      "react-hook-form",
+      "yup",
+      "@reduxjs/toolkit",
+      "antd",
+      "mongodb",
+      "google cloud",
+    ],
+    scope: ["Making layouts", "Writing logic", "Fixing bugs"],
+    id: uuid(),
+  },
+  {
     website: "jobheron.com",
     time: "September 2021 - January 2022",
     name: "Jobheron - UK's Leading Online Recruitment Provider",
@@ -156,7 +178,7 @@ export const realProjects = [
   },
   {
     website: "NDA",
-    time: "March 2021 - present",
+    time: "March 2021 - May 2021",
     name: "Corporate website",
     description:
       "Corporate website to tell more about company goals, achievements and share the latest information.",
@@ -174,6 +196,7 @@ export const realProjects = [
       "emailjs",
       "module-scss",
       "react-icons",
+      "yahoo-finance",
     ],
     scope: [
       "Making 8 pages with NextJS",
