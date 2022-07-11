@@ -246,7 +246,22 @@ export const realProjects = [
 
 export const courses = [
   {
-    name: 'Frontend advanced(2022)',
+    name: 'NestJS - Building Real Project API From Scratch (2022)',
+    website:
+      'https://www.udemy.com/course/nestjs-building-real-project-api-from-scratch/',
+    labels: [
+      'nest',
+      'typescript',
+      'node',
+      'postgresql',
+      'typeorm',
+      'express',
+      'rest',
+    ],
+    id: uuid(),
+  },
+  {
+    name: 'Frontend advanced (2022)',
     website: 'https://www.udemy.com/course/nextjs-frontend-advanced',
     labels: ['next', 'tailwind', 'react-query', 'SSR', 'typescript'],
     id: uuid(),
