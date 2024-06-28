@@ -178,8 +178,8 @@
         transition: all 0.4s ease-in-out;
         position: absolute;
         width: 60px;
-        top: 18%;
-        left: 24%;
+        top: 14%;
+        left: 17%;
     }
     .avatar-main img {
         width: 110px;
@@ -400,9 +400,17 @@
         flex-direction: column;
         .avatar-wrapper {
             width: 150px;
-            img {
+            .avatar-main img {
                 width: 150px;
                 height: 150px;
+            }
+            .sunglesses {
+                width: 100px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
     }
@@ -427,6 +435,8 @@
     }
     .header__about {
         padding: 15px 0;
+    }
+    .sunglesses {
     }
 }
 
