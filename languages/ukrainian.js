@@ -311,7 +311,7 @@ export const courses = [
         id: uuid(),
     },
     {
-        name: 'Complete NodeJS Developer (GraphQL, MongoDB, + more)',
+        name: 'Complete NodeJS Developer (GraphQL, MongoDB, + more) (2024)',
         website:
             'https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery',
         labels: [

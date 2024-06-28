@@ -97,6 +97,7 @@ function AdditionalInfoBlock({
                                 {' '}
                                 <span>{item.name}</span>
                                 <a
+                                    className="print-hide"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     href={item.website}
