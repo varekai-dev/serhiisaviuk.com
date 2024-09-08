@@ -100,10 +100,12 @@ function ExperienceBlock({ portfolio, realProjects, backThen, now, language }) {
             <h6>{language === 'en' ? 'Now' : 'Зараз'} </h6>
 
             {
-                <div className="work ">
+                <div className="work">
                     <div className="work__time">{now.time}</div>
                     <div className="work__place">{now.place}</div>
-                    <div className="work__content">{now.work}</div>
+                    <div className="work_description mb-10">
+                        {now.description}
+                    </div>
                     <div className="work__description">
                         <h5>
                             {language === 'en'
@@ -123,7 +125,6 @@ function ExperienceBlock({ portfolio, realProjects, backThen, now, language }) {
                 <div className="work back" key={item.id}>
                     <div className="work__time">{item.time}</div>
                     <div className="work__place">{item.place}</div>
-
                     <div className="work__description">{item.scope}</div>
                 </div>
             ))}

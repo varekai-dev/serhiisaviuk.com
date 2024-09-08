@@ -2,6 +2,29 @@ import { v4 as uuid } from 'uuid'
 
 export const portfolio = [
     {
+        name: 'Next pizza delivery',
+        website: 'https://next-pizza-delta.vercel.app/',
+        description:
+            'A pizza ordering website with an admin panel. It is possible to order pizza, view orders, add new pizzas. It is possible to choose the size and additional ingredients. Integrations: Stripe, Google Maps API, nodemailer',
+        technologies: [
+            'next',
+            'mongodb',
+            'prisma',
+            'app routing',
+            'tailwind',
+            'zod',
+            'react-hook-form',
+            'uploadthing',
+            'stripe',
+            'Google Maps API',
+            'nodemailer',
+            'NextAuth',
+            'vercel',
+            'typescript',
+        ],
+        id: uuid(),
+    },
+    {
         name: 'Online cinema',
         website: 'https://online-cinema-frontend-beta.vercel.app',
         description:
@@ -80,13 +103,6 @@ export const portfolio = [
             'React Select',
             'google-auth',
         ],
-        id: uuid(),
-    },
-    {
-        name: 'React Shop',
-        website: 'https://varekai-dev.github.io/react-shop/',
-        description: 'Simple shop with the cart that uses Fortnite API',
-        technologies: ['react', 'hooks', 'api', 'github-pages'],
         id: uuid(),
     },
 ]
@@ -400,15 +416,24 @@ export const courses = [
 
 export const now = {
     time: '21st september 2021 – present',
-    place: 'Apiko',
-    work: 'Frontend Developer',
+    place: 'Frontend Developer at Apiko',
+    description:
+        'Worked on different projects. My scope of work is: code review, writing code, testing, refactoring, fixing bugs, implementing new features',
     scope: [
         'redux',
         'react',
         'unit testing',
         'typescript',
         'graphql',
+        'tailwind',
+        'apollo',
+        'strapi',
         'next',
+        'zod',
+        'react-hook-form',
+        'antd',
+        'mui',
+        'react-query',
         'zustand',
         'styled-components',
     ],
@@ -417,9 +442,9 @@ export const now = {
 
 export const backThen = [
     {
-        time: '1st January 2020 – 14th september',
-        place: '??? at G-Light Technology',
-        scope: "Had no position in the company. Mostly helped with work in different departments. This is where my journey to the world of IT started. Saw that our HTML coder wasn't enough to make all job.  Started to learn HTML, CSS, JS, React to help with work. At that time I understood that frontend is mine. Start with simple HTML coding and one day realized that is hard to keep all pages updated without some framework. At the end of 2020 transferred all pages to Next.js. From 2021 started to do more dynamic pages. ",
+        time: '1st January 2020 – 14th september 2021',
+        place: 'Frontend developer at G-Light Technology',
+        scope: "Worked on different promotion landing pages, the company's website, a loyalty program for clients, and esports news website",
 
         id: uuid(),
     },
@@ -463,19 +488,32 @@ export const skills = [
     'ELEMENTOR',
     'REACT',
     'FIGMA',
-    'PHOTOSHOP',
     'PAGESPEED OPTIMIZATION',
     'GIT',
     'BEM',
     'STRAPI',
-    'ANIMATIONS',
     'NEXT.JS',
     'VERCEL',
+    'NEXTAUTH',
+    'STRIPE',
+    'GOOGLE MAPS API',
+    'S3',
+    'CLOUDINARY',
+    'UPLOADTHING',
+    'TYPEORM',
+    'PRISMA',
     'DIGITALOCEAN',
     'GODADDY',
     'ZUSTAND',
     'APOLLO',
     'GRAPHQL',
+    'ZOD',
+    'REACT-HOOK-FORM',
+    'REACT-QUERY',
+    'TAILWIND',
+    'MATERIAL UI',
+    'NODMAILER',
+    'MONGODB',
 ]
 
 export const character = [
